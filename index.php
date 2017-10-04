@@ -52,4 +52,8 @@ echo "Returning the last 2 characters from $date<br>";
 echo "The last two characters are: ";
 echo substr($date,-2);
 echo "<br><br>";
+
+echo "Breaking the date into an array<br>";
+print_r(explode('/', $date,3));
+echo "<br><br>";
 ?>
