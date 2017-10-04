@@ -55,5 +55,18 @@ echo "<br><br>";
 
 echo "Breaking the date into an array<br>";
 print_r(explode('/', $date,3));
+echo "<br> After delimiting all elements with space: ";
+$arr = explode('/', $date);
+echo " " .$arr[0]. " " .$arr[1]. " " .$arr[2]. " ";
 echo "<br><br>";
+
+echo " Finding if values in $year is a leap yaer or not<br>";
+foreach ($year as $value){
+  switch(($value%4!=0)||(($value%100==0)&&($value%400!=0))){
+    case 1:echo "$value FALSE ";
+    break;
+    case 0:echo "$value TRUE ";
+    break;
+    }
+}
 ?>
