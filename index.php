@@ -42,4 +42,14 @@ echo "Returning the length of $date<br>";
 echo " The length is:"; 
 echo strlen($date);
 echo "<br><br>";
+
+echo "ASCII value of the first character of $date<br>";
+echo " The ASCII value is:";
+echo ord($date);
+echo "<br><br>";
+
+echo "Returning the last 2 characters from $date<br>";
+echo "The last two characters are: ";
+echo substr($date,-2);
+echo "<br><br>";
 ?>
