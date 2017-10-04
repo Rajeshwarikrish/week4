@@ -34,7 +34,12 @@ echo "  " .$pos. "  ";
 echo "<br><br>";
 
 echo "Counting the number of words in $date<br>";
+echo "The number of words are:";
 echo str_word_count($date);
+echo "<br><br>";
 
-
+echo "Returning the length of $date<br>";
+echo " The length is:"; 
+echo strlen($date);
+echo "<br><br>";
 ?>
