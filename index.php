@@ -9,4 +9,12 @@ $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
 print_r($year)
 
+if(strcmp($date,$tar)>0)
+  { echo "The future";
+}else if(strcmp($date,$tar)<0)
+  { echo "The past";
+}else
+  { echo "Oops";
+}
+
 ?>
