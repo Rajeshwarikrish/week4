@@ -25,9 +25,16 @@ if(strcmp($date,$tar)>0)
 echo "<br><br>";
 
 echo " Searching for '/' in $date<br>";
+echo " The position of / is : ";
 $pos = 0;
 while ($pos > -1) {
 $pos = strpos($date, "/",$pos+1);
 echo "  " .$pos. "  ";
 }
+echo "<br><br>";
+
+echo "Counting the number of words in $date<br>";
+echo str_word_count($date);
+
+
 ?>
